@@ -6,10 +6,16 @@
   "author": "Bubi Shimi <bubishimi@gmail.com>",
   "repository": { "type": "git", "url": "git://github.com/bubishimi/MightyCache.git" },
   "dependencies": {
-  	"optimist" : "~0.3.4"
+  	"optimist" : ">=0.3.4",
+  	"hashish" : ">=0.0.4",
   },
-  "devDependencies": {},
-  "scripts": {},
-  "main": "might.js",
+  "devDependencies" : {
+  	"expresso" : ">=0.9.0"
+  },
+  "scripts": {
+  	"test": "expresso test/*"
+  },
+  "license" : "GPL v2",
+  "main": "mighty.js",
   "engines": { "node": ">= 0.6.x" },
 }
