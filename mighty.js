@@ -1,35 +1,16 @@
-var net = require('net');
+#!/usr/bin/env node
 
+var argv = require('optimist')
+	.usage('Usage: ./mighty.js -t [type{:port}]')
+	.demand('t')
+	.alias('t', 'types')
+	.describe('t', 'list of the required cache protocols, e.g -t memcached:11211 -t redis -t rest:8080')
+	.argv;
+	
+var modules = {};
+modules.memcached = {'mem' : ''};
+modules.redis = {'mem' : ''};
+for(i in argv.t){
+	console.log(modules[argv.t[i]]);
 
-var server = net.createServer(function (socket) {
-
-	socket.on('connect', function () {
-		console.info('Client connected');
-	});
-
-	socket.on('data', function (data) {
-		console.info('Client sent: %s', data);
-		socket.write(data);
-	});
-
-	socket.on('end', function () {
-		console.info('Client disconnected');
-	});
-
-	socket.on('timeout', function () {
-		console.info('Client timeout');
-	});
-
-	socket.on('error', function (exception) {
-		console.info('Client error: %s', exception);
-	});
-
-	socket.on('close', function () {
-		console.info('Client closed');
-	});
-
-});
-
-server.listen(11211, '127.0.0.1', function(){
-	console.log('Server bound at http://127.0.0.1:11211/');
-});
+}
