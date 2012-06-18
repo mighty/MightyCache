@@ -2,8 +2,6 @@ language: java
 jdk:
   - oraclejdk7
 
-before_install: "rm -f ~/.m2/settings.xml"
-
 install: 
     - "mvn install:install-file -Dfile=lib/vert.x-core-1.0.1.final.jar -DgroupId=org.vertx -DartifactId=vert.x-core -Dversion=1.0.1.final -Dpackaging=jar"
     - "mvn install:install-file -Dfile=lib/vert.x-platform-1.0.1.final.jar -DgroupId=org.vertx -DartifactId=vert.x-platform -Dversion=1.0.1.final -Dpackaging=jar"
