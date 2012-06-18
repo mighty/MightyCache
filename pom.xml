@@ -4,11 +4,13 @@
   <artifactId>MightyCache</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <repositories>
-      <repository>
+  	<repository>
   		<id>central</id>
   		<url>http://repo1.maven.org/maven2</url>
-  		<updatePolicy>never</updatePolicy>
-  </repository>
+  		<releases>
+  			<updatePolicy>never</updatePolicy>    
+  		</releases>
+  	</repository>
   </repositories>
   <dependencies>
       <dependency>
