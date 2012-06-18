@@ -3,6 +3,13 @@
   <groupId>org.mighty</groupId>
   <artifactId>MightyCache</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <repositories>
+      <repository>
+  		<id>central</id>
+  		<url>http://repo1.maven.org/maven2</url>
+  		<updatePolicy>never</updatePolicy>
+  </repository>
+  </repositories>
   <dependencies>
       <dependency>
           <groupId>org.vertx</groupId>
