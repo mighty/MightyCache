@@ -10,4 +10,4 @@ install:
     - "mvn install:install-file -Dfile=lib/vert.x-testframework-1.0.1.final.jar -DgroupId=org.vertx -DartifactId=vert.x-testframework -Dversion=1.0.1.final -Dpackaging=jar"
     
 
-script: "mvn test -f pom.xml"
+script: "mvn test --offline -f pom.xml"
