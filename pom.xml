@@ -3,4 +3,24 @@
   <groupId>org.mighty</groupId>
   <artifactId>MightyCache</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <dependencies>
+      <dependency>
+          <groupId>org.vertx</groupId>
+          <artifactId>vert.x-core</artifactId>
+          <version>1.0.1.final</version>
+          <scope>provided</scope>
+      </dependency>
+        <dependency>
+          <groupId>org.vertx</groupId>
+          <artifactId>vert.x-testframework</artifactId>
+          <version>1.0.1.final</version>
+          <scope>provided</scope>
+      </dependency>
+      <dependency>
+          <groupId>org.vertx</groupId>
+          <artifactId>vert.x-platform</artifactId>
+          <version>1.0.1.final</version>
+          <scope>provided</scope>
+      </dependency>
+  </dependencies>
 </project>
