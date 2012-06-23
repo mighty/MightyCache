@@ -7,5 +7,4 @@ install:
     - "mvn install:install-file -Dfile=lib/vert.x-platform-1.1.0.final.jar -DgroupId=org.vertx -DartifactId=vert.x-platform -Dversion=1.1.0.final -Dpackaging=jar"
     - "mvn install:install-file -Dfile=lib/vert.x-testframework-1.1.0.final.jar -DgroupId=org.vertx -DartifactId=vert.x-testframework -Dversion=1.1.0.final -Dpackaging=jar"
     
-
 script: "mvn test --no-snapshot-updates -f pom.xml"
