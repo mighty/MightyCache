@@ -1,26 +1,30 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>org.mighty</groupId>
-  <artifactId>MightyCache</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <dependencies>
-      <dependency>
-          <groupId>org.vertx</groupId>
-          <artifactId>vert.x-core</artifactId>
-          <version>1.0.1.final</version>
-          <scope>provided</scope>
-      </dependency>
-        <dependency>
-          <groupId>org.vertx</groupId>
-          <artifactId>vert.x-testframework</artifactId>
-          <version>1.0.1.final</version>
-          <scope>provided</scope>
-      </dependency>
-      <dependency>
-          <groupId>org.vertx</groupId>
-          <artifactId>vert.x-platform</artifactId>
-          <version>1.0.1.final</version>
-          <scope>provided</scope>
-      </dependency>
-  </dependencies>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.mighty</groupId>
+	<artifactId>MightyCache</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<properties>
+		<vertx-version>1.1.0.final</vertx-version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.vertx</groupId>
+			<artifactId>vert.x-core</artifactId>
+			<version>${1.1.0.final}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.vertx</groupId>
+			<artifactId>vert.x-testframework</artifactId>
+			<version>${1.1.0.final}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.vertx</groupId>
+			<artifactId>vert.x-platform</artifactId>
+			<version>${1.1.0.final}</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
 </project>
